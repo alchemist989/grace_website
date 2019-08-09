@@ -55,8 +55,19 @@ def commenting():
     db.session.commit()
 
     
+    return json.dumps({'status': 'Comment Successful'})
 
-    return json.dumps({'status': 'Comment Sucessful'})
+@app.route("/comments/delete", methods=["POST"])
+def commentDelete():
+    comment_id = request.form['comment_id']
+    # Search for the comment
+    delete_comment = Comments.query.filter_by(id=comment_id).first()
+    # Delete the comment
+    db.session.delete(delete_comment)
+    # Save the Database
+    db.session.commit()
+    
+    return json.dumps({'status': 'Comment Deleted'});
 
 @app.route('/import', methods=['GET', 'POST'])
 def do_import():
