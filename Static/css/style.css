@@ -1,0 +1,87 @@
+.hero-image-background {    
+    background-image: url('http://oi68.tinypic.com/o5zxj9.jpg');
+    background-position: center center;
+    background-repeat:  repeat;
+    background-size:  cover;
+}
+.home-title-section {
+    text-align: center;
+    background: white;
+}
+.etude-section-background {
+    background-image: url('http://i68.tinypic.com/256u6pk.jpg')
+}
+
+.body-color {
+    background-image: url('https://www.historicpages.com/heads/1779pac.jpg');
+}
+
+.home-page-text {
+    background-color: white;
+}
+
+.home-text-style {
+    text-shadow:
+    -1px -1px 0 #ffffff
+     1px -1px 0 #ffffff,
+     -1px 1px 0 #ffffff,
+      1px 1px 0 #ffffff,
+}
+
+.paper-color-part {
+    background-color: #f4e0a3
+}
+
+.etude-section-background {
+    background-image: url('http://musikforskning.se/stm-sjm/sites/default/files/Ill%201.gif')
+}
+
+
+.setTitles {
+    text-align: center;
+    color: #000000;
+}
+
+.etudeTitles {
+    text-align: center;
+    color : #555555;
+
+}
+
+.etude-main {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.bg-one {
+    background-color: #f1e5a7;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.bg-two {
+    background-image: url('https://previews.123rf.com/images/ke77kz/ke77kz1605/ke77kz160500069/58625412-grunge-paper-background-natural-old-paper-texture-for-the-design-.jpg');
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bg-three {
+    background-color:#bbc4fd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bg-four {
+    background-color: #bd9092;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bg-banner {
+    background-image: url('https://previews.123rf.com/images/ke77kz/ke77kz1605/ke77kz160500069/58625412-grunge-paper-background-natural-old-paper-texture-for-the-design-.jpg');
+}
+
+.bgcomp {
+    background-color: #f1e5a7
+}

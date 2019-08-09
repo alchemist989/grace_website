@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block content %} 
+
+<section class="section">
+    <div class="container">
+                {% for transcendental in Transcendentals %}
+
+                <p> {{ transcendental.name }} in {{ transcendental.Key }}</p>
+                <p> {{ transcendental.Description }}</p>
+
+                    <iframe src='{{ transcendental.Video }}' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
