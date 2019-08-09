@@ -50,51 +50,34 @@
 </section>
 
 
-
 <section class="section">
   <div class="container">
-      {% for comment in Comments %}
-    <div class="card comment-card">
-        <div class="card-content">
-          <div class="media-content">
-      
-            <p class="title is-4"> {{ comment.username }} </p>
-            <p class="subtitle is-6">{{ comment.email }}</p>
-          </div>
-        </div>
-        <div class="media-right">
-          <button class="delete"></button>
-        </div>
-        <div class="content">
-          {{ comment.comment }}
-        </div>
-      </div>
-    {% endfor %}
-    </div>
-</section>
-
-
-<!-- <article class="media">
-        <figure class="media-left">
-          <p class="image is-64x64">
-            <img src="https://bulma.io/images/placeholders/128x128.png">
-          </p>
-        </figure>
-        <div class="media-content">
-          <div class="content">
-            <p>
-              <strong>{{ comment.username }}</strong> <small> {{ comment.email }} </small> 
-              <br>
-              {{ comment.comment }}
+    {% for comment in comments %}
+    <div class="card">
+      <div class="card-content">
+        <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img src="https://bulma.io/images/placeholders/128x128.png">
             </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p class="title is-4"> {{ comment.username }} </p>
+              <p class="subtitle is-6">{{ comment.email }}</p>
+              <div class="content">
+                {{ comment.comment }}
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="media-right">
-          <button class="delete"></button>
-        </div>
-      </article> -->
-
-
-
+          <div class="media-right">
+            <button class="delete"></button>
+          </div>
+        </article>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
 {% endblock %}

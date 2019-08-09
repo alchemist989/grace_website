@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import jsonify, render_template, request
 import requests, json
-from bs4 import BeautifulSoup
 from flask_sqlalchemy import SQLAlchemy
 import flask_excel as excel
 
@@ -38,9 +37,9 @@ db.create_all()
 @app.route("/comments", methods=["GET"])
 def inputcomment():
     dict_comments = []
-    for comments in Comments.query.all():
-        dict_comments.append(comments.__dict__)
-    return render_template('comments.html', Comments = dict_comments)
+    for comment in Comments.query.all():
+        dict_comments.append(comment.__dict__)
+    return render_template('comments.html', comments = dict_comments)
 
 
 @app.route("/comments", methods=["POST"])
